@@ -13,3 +13,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 # angularFire
 Firebase authentication with Angular
 >>>>>>> e2a97aa3ab8f5ffc588c5b0fd05686ac5e6d743b
+
+
+https://www.techiediaries.com/angular-course-firebase-authentication/
