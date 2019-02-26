@@ -11,6 +11,20 @@ import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminModule } from './admin/admin.module';
 
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyACjPRSnssNpjM3tG6he1MkmGc5eFiPLiM",
+  authDomain: "weblinkholder.firebaseapp.com",
+  databaseURL: "https://weblinkholder.firebaseio.com",
+  projectId: "weblinkholder",
+  storageBucket: "weblinkholder.appspot.com",
+  messagingSenderId: "339180766542"
+};
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +38,9 @@ import { AdminModule } from './admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

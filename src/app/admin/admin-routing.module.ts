@@ -6,8 +6,18 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectCreateComponent } from './project-create/project-create.component';
 import { ProjectUpdateComponent } from './project-update/project-update.component';
 
+import { LoginComponent } from  './login/login.component';
 
 const routes: Routes = [
+    {
+        path:  'admin',
+        component:  ProjectComponent,
+        
+        children: [
+            // [...]
+            { path:  'login',component:  LoginComponent}
+        ]
+        },
     {
         path: 'admin',
         component: ProjectComponent,
